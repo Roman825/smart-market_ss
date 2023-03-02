@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <div class="alert">This site was created in PC version only. Use your computer or laptop to view the site. <button onclick="window.location.href = 'https://smart-market.netlify.app'">Back to the previous page</button></div>
+    <div id="load" class="load">
+        <div class="load__body">
+            <div class="loader">
+                <svg viewBox="0 0 80 80">
+                    <circle id="test" cx="40" cy="40" r="32"></circle>
+                </svg>
+            </div>
+    
+            <div class="loader triangle">
+                <svg viewBox="0 0 86 80">
+                    <polygon points="43 8 79 72 7 72"></polygon>
+                </svg>
+            </div>
+    
+            <div class="loader">
+                <svg viewBox="0 0 80 80">
+                    <rect x="8" y="8" width="64" height="64"></rect>
+                </svg>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div id="#" class="header">
+            <header class="header__header">
+                <div class="header__body">
+                    <ul class="header__list">
+                        <a class="header__a" href="#"><li class="header__link i-i-1">Home</li></a> 
+                        <a class="header__a" href="#cart""><li class="header__link i-i-2">Cart</li></a> 
+                        <a class="header__a" href=""><li class="header__link i-i-3">Profile</li></a> 
+                    </ul>
+                </div>
+            </header>
+        </div>
+    
+    <div class="content">
+        <div class="search">
+            <div class="search__input">
+                <input type="text" class="srch" id="srch" placeholder="Enter a search term">
+                <button class="srch__btn" id="srch__btn">Find</button>
+                <p>(beta test - searchable: "Iphone", "Samsung", "Xiaomi", "Oppo")</p>
+            </div>
+        </div>
+        <div class="cards">
+            <div class="card">
+                <img src="/img/apple-iphone-14-3.jpg" alt="" class="card__img">
+                <h1 class="card__h">Iphone 14 </h1>
+                <div class="card__buttons">
+                    <span class="tooltiptext">Add to cart</span>
+                    <button class="card__btn">Learn more</button>
+                    <button class="button1" onclick="iph14()">
+                        <span></span>
+                        <div class="cart">
+                            <svg viewBox="0 0 36 26">
+                                <polyline points="1 2.5 6 2.5 10 18.5 25.5 18.5 28.5 7.5 7.5 7.5"></polyline>
+                                <polyline points="15 13.5 17 15.5 22 10.5"></polyline>
+                            </svg>
+                        </div>
+                    </button>
+                </div>
+            </div>
+            <div class="card">
+                <img src="/img/xiaomi_mi-10-5g_twilight-grey_sell_mip@_1000.jpg" alt="" class="card__img img__x">
+                <h1 class="card__h">Xiaomi 10 </h1>
+                <div class="card__buttons">
+                    <span class="tooltiptext">Add to cart</span>
+                    <button class="card__btn">Learn more</button>
+                    <button class="button1" onclick="x10()">
+                        <span></span>
+                        <div class="cart">
+                            <svg viewBox="0 0 36 26">
+                                <polyline points="1 2.5 6 2.5 10 18.5 25.5 18.5 28.5 7.5 7.5 7.5"></polyline>
+                                <polyline points="15 13.5 17 15.5 22 10.5"></polyline>
+                            </svg>
+                        </div>
+                    </button>
+                </div>
+            </div>
+            <div class="card">
+                <img src="/img/Telefon_SAMSUNG_Galaxy_S22_5G_128GB_8GB_RAM_Dual_SIM_Phantom_Black_12_.avif" alt="" class="card__img img__s">
+                <h1 class="card__h">Samsung S22 </h1>
+                <div class="card__buttons">
+                    <span class="tooltiptext">Add to cart</span>
+                    <button class="card__btn">Learn more</button>
+                    <button class="button1" onclick="sams22()">
+                        <span></span>
+                        <div class="cart">
+                            <svg viewBox="0 0 36 26">
+                                <polyline points="1 2.5 6 2.5 10 18.5 25.5 18.5 28.5 7.5 7.5 7.5"></polyline>
+                                <polyline points="15 13.5 17 15.5 22 10.5"></polyline>
+                            </svg>
+                        </div>
+                    </button>
+                </div>
+            </div>
+            <div class="card">
+                <img src="/img/telefon_oppo_reno8_5g_shimmer_black_7__e5d5fcf3.avif" alt="" class="card__img img__o">
+                <h1 class="card__h">Oppo Reno8 </h1>
+                <div class="card__buttons">
+                    <span class="tooltiptext">Add to cart</span>
+                    <button class="card__btn">Learn more</button>
+                    <button class="button1" onclick="oppoR8()">
+                        <span></span>
+                        <div class="cart">
+                            <svg viewBox="0 0 36 26">
+                                <polyline points="1 2.5 6 2.5 10 18.5 25.5 18.5 28.5 7.5 7.5 7.5"></polyline>
+                                <polyline points="15 13.5 17 15.5 22 10.5"></polyline>
+                            </svg>
+                        </div>
+                    </button>
+                </div>
+            </div>
+            
+
+        </div>
+    </div>
+</div>
+    <div id="cart" class="popup">
+        <a href="##" class="popup_area"></a>
+        <div class="popup_body">
+            <div id="bask__con" class="popup_content basket">
+                <a href="##" class="popup_close">x</a>
+                <div class="popup_title">
+                    <b>Cart</b>
+                </div>
+                <div id="baskt" class="popup_text p-t-b">
+                    <button class="btn__rel" onclick="window.location.reload()">Update Products</button>
+                    <button class="btn__clr" onclick="clearBask()">Clear cart</button>
+                    <p class="link__bask"><a onclick="locationEnd()">
+                        End
+                        <svg viewBox="0 0 70 36">
+                            <path d="M6.9739 30.8153H63.0244C65.5269 30.8152 75.5358 -3.68471 35.4998 2.81531C-16.1598 11.2025 0.894099 33.9766 26.9922 34.3153C104.062 35.3153 54.5169 -6.68469 23.489 9.31527" />
+                        </svg>
+                    </a></p>
+                    <p class="pst">Empty😐</p> 
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="end__cart" class="popup">
+        <a href="##" class="popup_area"></a>
+        <div class="popup_body">
+            <div id="end__con" class="popup_content end__bask">
+                <a href="##" class="popup_close">x</a>
+                <div class="popup_title">
+                    <b>Place an order</b>
+                </div>
+                <div id="end__bsk" class="popup_text p-t-b end__frm">
+                    <h1>Your order:</h1>
+                    <p class="pst">Empty😐</p> 
+                    <form action="" class="contact__form">
+                            <div class="form__line">
+                                <input id="i-1" type="text" class="form__input f-i-i" name="name" required>
+                                <label class="form__label" for="i-1">Name <span>&nbsp*</span></label>
+                            </div>
+                            <div class="form__line">
+                                <input id="i-1" type="text" class="form__input f-i-i" name="surname" required>
+                                <label class="form__label" for="i-1">Surname <span>&nbsp*</span></label>
+                            </div>
+                            <div class="form__line">
+                                <input id="i-1" type="text" class="form__input f-i-i" name="otch" required>
+                                <label class="form__label" for="i-1">Patronymic <span>&nbsp*</span></label>
+                            </div>
+                            <div class="form__line">
+                                <input id="i-1" type="tel" class="form__input f-i-i" name="phone" required>
+                                <label class="form__label" for="i-1">Phone number <span>&nbsp*</span></label>
+                            </div>
+                            <div class="form__line">
+                                <button type="submit" class="form__button">Send</button>
+                            </div>
+                    </form>
+                    <p class="end__inf">*You will be contacted within 3 business days for details and address (not in beta version)</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="../js/script-en.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.1.1/gsap.min.js"></script>
+</body>
+</html>
